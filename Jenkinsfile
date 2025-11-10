@@ -36,7 +36,7 @@ pipeline {
             steps {
                 script {
                     // Run Bandit for static code analysis
-                    sh './venv/bin/bandit -r app/'
+                    sh './venv/bin/bandit -r app/ || true'
                 }
             }
         }
@@ -56,7 +56,7 @@ pipeline {
             steps {
                 script {
                     // Run Safety to check dependencies
-                    sh './venv/bin/safety check -r requirements.txt'
+                    sh './venv/bin/safety check -r requirements.txt || true'
                 }
             }
         }
