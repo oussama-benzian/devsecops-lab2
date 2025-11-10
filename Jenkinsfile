@@ -27,7 +27,7 @@ pipeline {
             steps {
                 script {
                     // Run the tests with pytest
-                    sh './venv/bin/pytest app/tests/'
+                    sh 'cd /var/lib/jenkins/workspace/DevSecOps-Lab2-Pipeline && PYTHONPATH=/var/lib/jenkins/workspace/DevSecOps-Lab2-Pipeline ./venv/bin/pytest app/tests/'
                 }
             }
         }
