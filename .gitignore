@@ -1,0 +1,47 @@
+# Virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+findings.txt
+
+# Trivy contrib files
+contrib/
+
+# Generic files (not project-specific)
+LICENSE
+README.md
+Lab2.md
+pipeline_lab2.txt
+
+# Jenkins artifacts
+bandit-report.json
+trivy-report.json
+safety-report.json
+test-results.xml
+
+# Docker volumes (if any)
+data/
